@@ -4,7 +4,8 @@ const errorMiddleware = require('./middlewares/error');
 const cookieParser = require('cookie-parser')
 const path = require('path')
 const dotenv = require('dotenv');
-dotenv.config({path:path.join(__dirname,"/etc/secrets/config.env")});
+dotenv.config();
+// dotenv.config({path:path.join(__dirname,"/etc/secrets/config.env")});
 
 
 app.use(express.json());
